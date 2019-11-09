@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-19 12:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\dashboard\models.py:19
+msgid "Single"
+msgstr ""
+
+#: .\dashboard\models.py:20
+msgid "Married"
+msgstr ""
+
+#: .\dashboard\models.py:21
+msgid "Divorced"
+msgstr ""
+
+#: .\dashboard\models.py:22
+msgid "Widowed"
+msgstr ""
+
+#: .\dashboard\models.py:23
+msgid "Open Relationship"
+msgstr ""
+
+#: .\dashboard\models.py:24
+msgid "In a Relationship"
+msgstr ""
+
+#: .\dashboard\models.py:25
+msgid "It is Complicated"
+msgstr ""
+
+#: .\dashboard\models.py:34
+msgid "Love"
+msgstr ""
+
+#: .\dashboard\models.py:35
+msgid "Flirting"
+msgstr ""
+
+#: .\dashboard\models.py:36
+msgid "Marriage"
+msgstr ""
+
+#: .\dashboard\models.py:73
+msgid "Interested in Men"
+msgstr ""
+
+#: .\dashboard\models.py:74
+msgid "Interested in Women"
+msgstr ""
+
+#: .\dashboard\models.py:75
+msgid "Interested in Men and Women"
+msgstr ""
+
+#: .\dashboard\models.py:124
+msgid "Monthly"
+msgstr ""
+
+#: .\dashboard\models.py:125
+msgid "Quarterly"
+msgstr ""
+
+#: .\dashboard\models.py:126
+msgid "Bi-Annually"
+msgstr ""
+
+#: .\dashboard\models.py:127
+msgid "Annually"
+msgstr ""
+
+#: .\dashboard\models.py:181
+msgid "Accepted"
+msgstr ""
+
+#: .\dashboard\models.py:182 .\user_auth\models.py:60
+msgid "Pending"
+msgstr ""
+
+#: .\dashboard\models.py:183
+msgid "Rejected"
+msgstr ""
+
+#: .\user_auth\forms.py:20
+msgid "Email must have at most 191 characters"
+msgstr ""
+
+#: .\user_auth\forms.py:24 .\user_auth\forms.py:246
+msgid "Email"
+msgstr ""
+
+#: .\user_auth\forms.py:31
+msgid "* Email"
+msgstr ""
+
+#: .\user_auth\forms.py:35 .\user_auth\forms.py:257
+msgid "Mobile number must have 11 digits"
+msgstr ""
+
+#: .\user_auth\forms.py:40 .\user_auth\forms.py:258 .\user_auth\forms.py:262
+msgid "Mobile Number"
+msgstr ""
+
+#: .\user_auth\forms.py:47
+msgid "* Mobile Number"
+msgstr ""
+
+#: .\user_auth\forms.py:50 .\user_auth\forms.py:192 .\user_auth\forms.py:328
+msgid "Password must have 8 characters"
+msgstr ""
+
+#: .\user_auth\forms.py:54
+msgid "Password (must be 8 alphanumeric characters)"
+msgstr ""
+
+#: .\user_auth\forms.py:60
+msgid "* Password"
+msgstr ""
+
+#: .\user_auth\forms.py:61
+msgid "Password must be 8 alphanumeric characters"
+msgstr ""
+
+#: .\user_auth\forms.py:67
+msgid "Confirm Password (must match password)"
+msgstr ""
+
+#: .\user_auth\forms.py:72 .\user_auth\forms.py:351
+msgid "Confirm password must match password"
+msgstr ""
+
+#: .\user_auth\forms.py:73
+msgid "* Confirm Password"
+msgstr ""
+
+#: .\user_auth\forms.py:79
+msgid "First Name"
+msgstr ""
+
+#: .\user_auth\forms.py:86
+msgid "* First Name"
+msgstr ""
+
+#: .\user_auth\forms.py:92
+msgid "Last Name"
+msgstr ""
+
+#: .\user_auth\forms.py:99
+msgid "* Last Name"
+msgstr ""
+
+#: .\user_auth\forms.py:110
+msgid "* Gender"
+msgstr ""
+
+#: .\user_auth\forms.py:125
+msgid "This email already exists in our database"
+msgstr ""
+
+#: .\user_auth\forms.py:132
+msgid "This mobile number already exists in our database"
+msgstr ""
+
+#: .\user_auth\forms.py:138
+msgid "Gender is required"
+msgstr ""
+
+#: .\user_auth\forms.py:182 .\user_auth\forms.py:189
+msgid "Old Password"
+msgstr ""
+
+#: .\user_auth\forms.py:188 .\user_auth\forms.py:339
+msgid "Password is required"
+msgstr ""
+
+#: .\user_auth\forms.py:196 .\user_auth\forms.py:202
+msgid "New Password"
+msgstr ""
+
+#: .\user_auth\forms.py:203 .\user_auth\forms.py:228 .\user_auth\forms.py:365
+msgid "Password mismatch"
+msgstr ""
+
+#: .\user_auth\forms.py:209 .\user_auth\forms.py:216
+msgid "Confirm New Password"
+msgstr ""
+
+#: .\user_auth\forms.py:215
+msgid "Confirm new password must match new password"
+msgstr ""
+
+#: .\user_auth\forms.py:272 .\user_auth\forms.py:276
+msgid "Password"
+msgstr ""
+
+#: .\user_auth\forms.py:285
+msgid ""
+"This user account is inactive. Activate your account using the mobile "
+"verification code sent to your mobile number"
+msgstr ""
+
+#: .\user_auth\forms.py:288
+msgid ""
+"Invalid login credentials given! Please enter your correct login details "
+msgstr ""
+
+#: .\user_auth\forms.py:304
+#, python-format
+msgid " You have %(trial)s tries left."
+msgstr ""
+
+#: .\user_auth\forms.py:332
+msgid "New Password (Minimum of 8 characters)"
+msgstr ""
+
+#: .\user_auth\forms.py:345
+msgid "Confirm New Password (Must match new password)"
+msgstr ""
+
+#: .\user_auth\models.py:13
+msgid "Email is required"
+msgstr ""
+
+#: .\user_auth\models.py:50
+msgid "Male"
+msgstr ""
+
+#: .\user_auth\models.py:51
+msgid "Female"
+msgstr ""
+
+#: .\user_auth\models.py:61
+msgid "Unverified"
+msgstr ""
+
+#: .\user_auth\models.py:62
+msgid "Verified"
+msgstr ""
+
+#: .\user_auth\views.py:130
+msgid "Activate your"
+msgstr ""
+
+#: .\user_auth\views.py:130
+msgid "Account"
+msgstr ""

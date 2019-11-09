@@ -1,0 +1,128 @@
+ {% extends 'user_auth/layouts/auth_layout.html' %}
+ {% load static %}
+
+ {% block header %}
+ <header>
+     <img src="{% static 'user_auth/img/lace.png' %}" alt="Lace-logo">
+     <a href="#signin">LOG IN</a>
+ </header>
+ {% endblock header%}
+
+ {% block contents %}
+ <section class="container">
+     <h1>Find. Chat. Date.</h1>
+     <ul>
+         <li><a href="#signin">Log In</a></li>
+         <li><a href="#modal">Sign Up</a></li>
+     </ul>
+     <p>
+         By using Lace dating services you agree to Terms and Conditions. Learn how we process your data in our <a
+             href="{% url 'auth:privacy_policy' %}">Privacy Policy</a> and <a
+             href="{% url 'auth:cookie_policy' %}">Cookie Policy</a>
+     </p>
+     <div>
+         <a href="#modal">Sign Up</a>
+     </div>
+ </section>
+ <div class="modal-container" id="modal">
+     <div class="modal">
+         <img src="{% static 'user_auth/img/love.png' %}" class="modal-logo-reg" alt="lace-log0">
+         <a href="#" class="close">X</a>
+         <h3 class="modal-heading">
+             Enter Your Details
+         </h3>
+         <form id="signup_form" data-signup-url="{% url 'auth:user_create' %}">
+             {% csrf_token %}
+             <p id="ajax_output_signup" class="center text-center">&nbsp;&nbsp;&nbsp;</p>
+             <div id="form_set_1" class="tab">
+                 <div class="input-box input-box-reg">
+                     {{ signup_form.first_name }}
+                     {{ signup_form.last_name }}
+                 </div>
+             </div>
+             <div id="form_set_2" class="tab">
+                 <div class="input-box input-box-reg">
+                     {{ signup_form.gender }} <br />
+                     {{ signup_form.mobile_number }}
+                 </div>
+             </div>
+             <div id="form_set_3" class="tab">
+                 <div class="input-box input-box-reg">
+                     {{ signup_form.password }} <br />
+                     {{ signup_form.password2 }}
+                 </div>
+             </div>
+             <div style="overflow:auto;">
+                 <div style="float:center;">
+                     <center>
+                         <input id="back" type="button" class="btnRegister2" value="Back" onclick="nextPrev(-1)">
+                         <input id="next" type="button" class="btnRegister2" value="Next" onclick="nextPrev(1)">
+                         <input id="signup_submit" type="button" style="display: none;" value="submit" class="btnRegister2" />
+                     </center>
+                 </div>
+             </div>
+             <div style="text-align: center; margin-top: 40px;">
+                 <span class="step active"></span>
+                 <span class="step"></span>
+                 <span class="step"></span>
+             </div>
+         </form>
+         <br />
+         <p class="center text-center"><a href="#signin">Already have an account? </a>
+             <p>
+     </div>
+ </div>
+ <div class="signin-container" id="signin">
+     <div class="signin">
+         <div class="signin-case">
+             <img src="{% static 'user_auth/img/lace.png' %}" class="modal-logo" alt="lace-log0">
+             <a href="#" class="close">X</a>
+             <img class="login-img" src="{% static 'user_auth/img/Login-0.png' %}" alt="login">
+             <form id="login" data-auth-url="{% url 'auth:login' %}" data-redirect-url="{% url 'dashboard:index' %}">
+                 <p id="ajax_output" class="center text-center">&nbsp;&nbsp;&nbsp;</p>
+                 <div class="input-box input-box-reg">
+                     {{ login_form.as_p }}
+                 </div>
+                 <input id="login_submit" type="submit" class="btnRegister" value="Login">
+             </form>
+             <div class="letter">
+                 <a id="register_link" href="#modal" class="signin-p1">Sign up</a>
+                 <a id="password_reset_link" href="#forgot-Pw" class="signin-p2">Forgot password?</a>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="signin-container" id="forgot-Pw">
+     <div class="signin">
+         <div class="signin-case">
+             <img src="{% static 'user_auth/img/lace.png' %}" class="modal-logo" alt="lace-log0">
+             <a href="#" class="close">X</a>
+             <h3 class="modal-heading">
+                 Recover Password
+             </h3>
+             <form action="#" data-reset-url="{% url 'auth:reset_password' %}">
+                 <div class="input-box input-box-reg">
+                     {{ password_reset_form.as_p }}
+                 </div>
+                 <input id="reset_submit" type="submit" class="btnRegister" value="Reset">
+             </form>
+             <div class="letter">
+                 <a href="#modal" class="signin-p1">Sign Up</a>
+                 <a href="#signin" class="signin-p1">Log In</a>
+             </div>
+         </div>
+     </div>
+ </div>
+ {% endblock contents %}
+
+ {% block footer %}
+ <footer>
+     <img src="{% static 'user_auth/img/footer-shape.png' %}" alt="enjoy life">
+ </footer>
+ {% endblock footer %}
+ {% block pagescripts %}
+ <script src="{% static 'user_auth/js/jquery-1.8.0.min.js' %}"></script>
+ <script src="{% static 'user_auth/js/login.js' %}"></script>
+ <script src="{% static 'user_auth/js/signup.js' %}"></script>
+ <script src="{% static 'user_auth/js/tab.js' %}"></script>
+ {% endblock pagescripts %}

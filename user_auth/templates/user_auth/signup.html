@@ -1,0 +1,50 @@
+ {% extends 'user_auth/layouts/auth_layout.html' %}
+ {% load static %}
+
+ {% block header %}
+ <header>
+     <img src="{% static 'user_auth/img/lace.png' %}" alt="Lace-logo">
+     <a href="/">LOG IN</a>
+ </header>
+ {% endblock header%}
+
+ {% block contents %}
+ <section class="container">
+         <img src="{% static 'user_auth/img/love.png' %}" alt="lace-log0">
+         <h3>
+             Enter Your Details
+         </h3>
+         <form id="signup" data-signup-url="{% url 'auth:user_create' %}">
+             <p id="ajax_output_signup" class="center text-center">&nbsp;&nbsp;&nbsp;</p>
+             <div id="form_set_1">
+                 <div class="input-box">
+                     {{ signup_form.first_name }}
+                     {{ signup_form.last_name }}
+                     {{ signup_form.gender }} <br />
+                     {{ signup_form.mobile_number }}
+                     {{ signup_form.password }} <br />
+                     {{ signup_form.password2 }}
+                 </div>
+             </div>
+             <div style="overflow:auto;">
+                 <div style="float:center;">
+                     <center>
+                         <input id="submit" type="button" class="btnRegister2" value="Sign Up">
+                     </center>
+                 </div>
+             </div>
+         </form>
+         <br />
+    </section>  
+ 
+ {% endblock contents %}
+
+ {% block footer %}
+ <footer>
+     <img src="{% static 'user_auth/img/footer-shape.png' %}" alt="enjoy life">
+ </footer>
+ {% endblock footer %}
+ {% block pagescripts %}
+ <script src="{% static 'user_auth/js/jquery-1.8.0.min.js' %}"></script>
+ <script src="{% static 'user_auth/js/signup.js' %}"></script>
+ {% endblock pagescripts %}
